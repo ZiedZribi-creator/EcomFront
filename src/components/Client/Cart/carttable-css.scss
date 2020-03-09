@@ -1,0 +1,105 @@
+.cart-container{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .cart-table{
+    width: 100% ;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .progress-steps{
+      display: flex;
+      justify-content: space-around;
+      max-width: 900px ;
+      margin: 30px 0px ;
+      .step-item{
+         transition: all 100ms ;
+          width: 100px ;
+          height: 100px;
+          background-color: #E5E7E9 ;
+          border-radius: 50% ;
+          position: relative;
+          margin-right: 40px ;
+          p{
+            position: absolute;
+            top: 50% ;
+            left: 50% ;
+            transform: translateX(-50%) translateY(-50%);
+            // color: white ;
+            font-size: 13px ;
+            text-align: center;
+          }
+      }
+    }
+    table{
+      width: 80% ;
+      thead{
+          background-color: #576853 ;
+          color: white ;
+        tr{
+            height: 50px ;
+            font-size: 15px ;
+
+        }
+        th{
+          align-items: center;
+        }
+      }
+      tbody{
+
+        tr{
+
+        td{
+          text-align: center;
+          img{
+            height: 75px ;
+            width: 75px ;
+          }
+          p{
+            font-size: 16px ;
+
+          }
+          input{
+            width: 60px ;
+            margin: 0px auto ;
+          }
+          input::-webkit-inner-spin-button {
+              opacity: 1;
+         }
+         button{
+            padding: 5px 10px ;
+            background-color: green ;
+            color: white ;
+            border-radius: 50% ;
+            font-size: 15px ;
+         }
+        }
+      }
+    }
+    }
+  }
+  .cart-step-action{
+    display: flex;
+    width: 80% ;
+    justify-content: flex-end;
+    .cart-backward-btn{
+      background-color: green ;
+      color: white ;
+      min-width: 150px ;
+      padding: 15px 10px ;
+      font-size: 13px ;
+    }
+    .cart-forward-btn{
+      margin-left: 10px ;
+      background-color: green ;
+      color: white ;
+      min-width: 170px ;
+      padding: 15px 8px ;
+      font-size: 13px ;
+    }
+
+
+  }
+}

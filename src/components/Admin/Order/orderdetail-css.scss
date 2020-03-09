@@ -1,0 +1,47 @@
+.order-detail {
+    width: 100% ;
+    height: 100% ;
+    display: flex ;
+    flex-direction: column;
+    padding-bottom: 50px ;
+    // justify-content: space-between;
+
+    .order-detail-info {
+       // width: 40% ;
+       margin-bottom: 15px ;
+       .order-user-info {
+         margin-bottom: 15px ;
+         p {
+           font-size: 20px ;
+           display: flex ;
+           width: 100% ;
+           .key {
+             font-weight: bold;
+             width: 25% ;
+           }
+           .value {
+             width: 70% ;
+           }
+         }
+       }
+
+    }
+    .order-product-list {
+      // width: 55% ;
+      table img {
+          height: 60px ;
+          width: 60px ;
+
+      }
+
+    }
+    .order-total {
+
+      display: flex;
+      justify-content: center;
+      width: 100% ;
+      table {
+        width: 50% ;
+      }
+    }
+}

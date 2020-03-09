@@ -1,0 +1,43 @@
+.order-filter {
+   display: flex ;
+   justify-content: space-between;
+   width: 100% ;
+   .email-filter {
+      width: 24% ;
+      label {
+        font-size: 1.2rem ;
+      }
+   }
+   .client-name-filter{
+     width: 24% ;
+     label {
+       font-size: 1.2rem ;
+     }
+   }
+   .phone_number-filter {
+      width: 24% ;
+      label {
+        font-size: 1.2rem ;
+      }
+   }
+   .status-filter{
+     width: 24% ;
+     label {
+       font-size: 1.2rem ;
+     }
+   }
+   @media only screen and (max-width: 980px) {
+     flex-direction: column;
+     .form-group{
+       width: 100% ;
+     }
+   }
+}
+.order-table{
+  font-size: 1.5em ;
+  display: flex ;
+  flex-direction: column;
+  align-items: center;
+  height: 100% ;
+  padding-bottom: 100px ;
+}

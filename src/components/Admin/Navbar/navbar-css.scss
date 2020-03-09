@@ -1,0 +1,191 @@
+.admin-panel-nav {
+  width: 100% ;
+
+
+  nav {
+    // position: sticky ;
+    // z-index: 15 ;
+    // width: 100% ;
+    height: 60px ;
+    background-color: #D14D0B ;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+
+    .date-range-picker {
+      display: flex;
+      justify-content: flex-start;
+    }
+    .navigation {
+      height: 100% ;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      list-style: none ;
+      padding-right: 30px ;
+      padding-left: 30px ;
+      color : white ;
+      & > li {
+
+         height: 100% ;
+         margin-right:20px ;
+         position: relative;
+         display: flex ;
+         align-items: center;
+         justify-content: center;
+         cursor: pointer;
+         & i {
+           font-size: 60px ;
+
+         }
+         .message-dropdown {
+           padding-left:  5px ;
+           display: flex;
+           flex-direction: column;
+           align-items:  flex-start;
+           position: absolute;
+           z-index: 3 ;
+           background-color: white ;
+           color: grey ;
+           opacity: 0.98 ;
+           list-style: none ;
+           top : 64px ;
+           display: none ;
+           left: -65px ;
+           bottom: 0px ;
+           height: 150px ;
+           width: 150px  ;
+           .arrow {
+             height: 15px ;
+             width: 15px ;
+             transform: rotate(45deg);
+             background-color: inherit;
+             position: relative;
+             top:-8px ;
+             margin: 0px auto;
+           }
+           li {
+             font-size: 18px ;
+             padding: 5px 0px 5px 5px  ;
+           }
+         }
+         .notification-dropdown {
+           padding-left:  5px ;
+           display: flex;
+           flex-direction: column;
+           align-items:  flex-start;
+           position: absolute;
+           z-index: 3 ;
+           background-color: white ;
+           color: grey ;
+           opacity: 0.98 ;
+           list-style: none ;
+           top : 64px ;
+           display: none ;
+           left: -68px ;
+           bottom: 0px ;
+           height: 150px ;
+           width: 150px  ;
+           .arrow {
+             height: 15px ;
+             width: 15px ;
+             transform: rotate(45deg);
+             background-color: inherit;
+             position: relative;
+             top:-8px ;
+             margin: 0px auto;
+           }
+           li {
+             font-size: 18px ;
+             padding: 5px 0px 5px 5px  ;
+           }
+         }
+        &:last-child {
+           position: relative;
+           display: flex ;
+           align-items: center;
+           justify-content: center;
+           width: 200px ;
+           color : white ;
+           margin-right: 0px ;
+           img {
+             border-radius: 50% ;
+             height: 35px ;
+             width: 35px ;
+             margin-right: 5px ;
+
+           }
+           p {
+             font-size: 16px ;
+             margin: auto ;
+
+           }
+           i{
+             font-size: inherit ;
+
+           }
+           // &:hover ul , ul:hover ul {
+           //   display: block
+           // }
+           .account-dropdown {
+             padding-left:  5px ;
+             display: flex;
+             flex-direction: column;
+             align-items:  flex-start;
+             position: absolute;
+             z-index: 3 ;
+             background-color: white ;
+             color: grey ;
+             opacity: 0.98 ;
+             list-style: none ;
+             top : 64px ;
+             display: none ;
+             left: 30px ;
+             bottom: 0px ;
+             height: 150px ;
+             width: 150px  ;
+             .arrow {
+               height: 15px ;
+               width: 15px ;
+               transform: rotate(45deg);
+               background-color: inherit;
+               position: relative;
+               top:-8px ;
+               margin: 0px auto;
+             }
+             li {
+               font-size: 18px ;
+               padding: 5px 0px 5px 5px  ;
+             }
+           }
+           }
+
+         i {
+           font-size: 20px ;
+         }
+      }
+
+      // & li:first-child {
+      //   position: relative;
+      // }
+      // .dropdown {
+      //   list-style: none;
+      //   position: absolute;
+      //   z-index: 2 ;
+    //  }
+    }
+    @media only screen and (max-width: 600px) {
+      flex-direction : column;
+      align-items: center;
+      justify-content: center;
+      height: 90px ;
+      .date-range-picker{
+      display: none ;
+      }
+      .navigation{
+         width:100% ;
+         justify-content: center;
+      }
+    }
+  }
+}

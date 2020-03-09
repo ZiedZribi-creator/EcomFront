@@ -1,0 +1,15 @@
+.guest-user-form-container{
+  width: 100% ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .guest-user-form{
+    width: 80% ;
+    label{
+      font-size: 15px ;
+    }
+    p{
+      font-size: 15px ;
+    }
+  }
+}

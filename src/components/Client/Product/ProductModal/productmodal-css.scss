@@ -1,0 +1,74 @@
+.success-msg{
+  width: 100% ;
+  color: green ;
+  display: flex;
+  i{
+    font-size: 25px ;
+    margin-right: 10px ;
+  }
+  p{
+    font-family: Tahoma ;
+
+  }
+
+
+}
+.product-modal {
+  font-family: Arial ;
+  overflow: hidden;
+  display: flex;
+  width: 100% ;
+  // flex-direction: column;
+  &-image {
+    width: 100%  ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+      width: 250px ;
+      height: 250px ;
+    }
+  }
+  &-description{
+    width: 100% ;
+    display: flex;
+    flex-direction: column;
+    .title{
+      font-size: 17px ;
+      color: #535A4C ;
+    }
+    .price{
+      font-size: 16px ;
+      color: green ;
+    }
+    .modal-btn-action{
+      margin-top: 20px ;
+      display: flex;
+      flex-direction: column;
+      width: 100% ;
+      align-items: flex-start;
+      .modal-buy-btn{
+        width: 100%;
+        padding: 10px 10px  ;
+        font-size: 15px ;
+        background-color: #535A4C ;
+        color: white ;
+
+      }
+      p{
+        text-align: center;
+        width: 100% ;
+
+      }
+      .modal-continue-btn{
+        width: 100% ;
+        padding: 10px 10px  ;
+        font-size: 15px ;
+        background-color: #ECF0F1 ;
+        margin-left: 10px ;
+
+      }
+    }
+
+  }
+}

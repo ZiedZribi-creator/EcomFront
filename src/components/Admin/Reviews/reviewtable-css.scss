@@ -1,0 +1,47 @@
+
+.new-review-section{
+  width: 100% ;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px ;
+  font-size: 10px ;
+  button{
+    background-color: blue ;
+    color: white ;
+    padding: 5px 20px ;
+    font-size: 1.5em ;
+  }
+  @media only screen and (max-width: 880px) {
+    button{
+      width: 100% ;
+      padding: 10px 0px ;
+
+    }
+  }
+}
+.review-filter {
+  display: flex ;
+  justify-content: space-between;
+  width: 100% ;
+  .client-name-filter{
+    width: 45% ;
+    label {
+      font-size: 1.5em ;
+    }
+  }
+  .content-filter{
+    width: 53% ;
+    label {
+      font-size: 1.5em ;
+    }
+  }
+   @media only screen and (max-width: 880px) {
+     flex-direction: column;
+     .client-name-filter{
+       width : 100% ;
+     }
+     .content-filter{
+       width: 100% ;
+     }
+   }
+}

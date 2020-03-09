@@ -1,0 +1,139 @@
+.navbar-container{
+   width: 100% ;
+}
+.top-navbar {
+  max-width: 100% ;
+  padding: 0px 50px ;
+  background-color: #535A4C ;
+  height: 45px ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white ;
+
+  &-left {
+    font-size: 10px ;
+    list-style-type: none ;
+    li {
+      text-decoration: none ;
+      display: flex;
+      align-items: center;
+      i {
+          font-size: 1.7em ;
+          margin-right: 0.5em ;
+      }
+      p {
+        font-size: 1em ;
+        margin-right: 0.5em ;
+      }
+    }
+  }
+  &-right {
+    font-size: 10px ;
+    list-style-type: none ;
+    display: flex;
+    align-items: center;
+    li {
+      text-decoration: none ;
+      font-size: 1.4em ;
+      margin-left: 0.5em ;
+      input {
+        width: 15em ;
+        border-radius: 5px ;
+        padding: 5px ;
+        color: grey ;
+      }
+    }
+  }
+  @media only screen and (max-width: 930px) {
+      display: none ;
+  }
+}
+.middle-navbar {
+  width: 100% ;
+  padding: 0px 5em ;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 10px ;
+
+  &-social-media {
+    list-style-type: none ;
+    display: flex;
+    align-items: flex-end;
+    li {
+      text-decoration: none ;
+      font-size: 2em ;
+      margin-right: 0.5em ;
+      cursor: pointer;
+    }
+  }
+  &-menu{
+    display: none ;
+    font-size: 3em ;
+  }
+  &-logo img {
+    width: 30em ;
+    height: 7em ;
+  }
+  &-cart {
+    position: relative;
+    i{
+      font-size: 3em ;
+      cursor: pointer;
+    }
+    span{
+      position: absolute;
+      background-color : red ;
+      color : white ;
+      border-radius: 50% ;
+      padding: 3px ;
+      font-size: 13px ;
+      top: 16px ;
+      right: 6px ;
+      cursor: pointer;
+    }
+  }
+  @media only screen and (max-width: 930px) {
+    font-size: 8px ;
+    padding: 10px ;
+      &-social-media {
+        display: none ;
+      }
+      &-menu{
+          display: block;
+      }
+  }
+}
+.bottom-navbar {
+  width : 100% ;
+  padding: 10px 50px ;
+    ul {
+      list-style-type: none ;
+      display: flex ;
+      justify-content: space-between;
+      li {
+        cursor: pointer;
+        font-size: 1.8em ;
+        font-family: cursive;
+
+      }
+    }
+    @media only screen and (max-width: 930px) {
+      display: none ;
+      padding: 0px 10px ;
+        ul {
+          display: flex ;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100% ;
+          li{
+            padding: 1em 0em ;
+            border-bottom: 1px solid ;
+            text-align: left;
+            width: 100% ;
+          }
+        }
+    }
+}

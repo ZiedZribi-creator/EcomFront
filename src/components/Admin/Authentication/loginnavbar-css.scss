@@ -1,0 +1,31 @@
+.login-navbar {
+  height: 60px ;
+  width: 100% ;
+  background-color: blue ;
+  color: white ;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px 0px 20px ;
+  ul{
+    list-style-type: none ;
+    display: flex;
+
+    li {
+      height: 100% ;
+      display: flex;
+      align-items: center;
+      font-size: 18px ;
+      margin-left: 15px ;
+      .nav-item{
+        color : white ;
+      }
+    }
+
+  }
+  .logo {
+    h2{
+      text-transform: uppercase;
+      font-size: 25px ;
+    }
+  }
+}

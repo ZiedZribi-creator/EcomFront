@@ -1,0 +1,36 @@
+.client-table {
+  display: flex ;
+  flex-direction: column;
+  align-items: center;
+  height: 100% ;
+  padding-bottom: 100px ;
+}
+.client-filter {
+   display: flex ;
+   justify-content: space-between;
+   width: 100% ;
+   .ref-filter {
+      width: 30% ;
+      label {
+        font-size: 1.2rem ;
+      }
+   }
+   .client-name-filter{
+     width: 30% ;
+     label {
+       font-size: 1.2rem ;
+     }
+   }
+   .client-email-filter{
+     width: 30% ;
+     label {
+       font-size: 1.2rem ;
+     }
+   }
+   @media only screen and (max-width: 980px) {
+     flex-direction: column;
+     .form-group{
+       width: 100% ;
+     }
+   }
+}

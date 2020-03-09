@@ -1,0 +1,183 @@
+.admin-dashboard {
+  // margin-top: 60px ;
+  width : 100% ;
+  height: 100vh ;
+
+
+  // padding-left: 30px ;
+  // padding-right: 30px ;
+
+.summary {
+  background-color: #323F6F ;
+  height: 150px ;
+  width: 100% ;
+
+  padding-top: 20px ;
+
+  .dash-bar {
+        display: flex ;
+        // flex-direction: column;
+        width: 100% ;
+        align-items: baseline;
+        color: white ;
+        margin-bottom: 10px ;
+
+        h2 {
+          text-transform:  uppercase ;
+
+          font-size: 20px ;
+
+        }
+          i {
+            position: relative;
+            font-size: 25px ;
+            top: 5px ;
+            margin-right: 5px ;
+            color: inherit;
+          }
+
+
+
+      }
+
+
+  }
+}
+
+.recent-info {
+
+  width: 100% ;
+  margin-top: 130px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  h2{
+     font-size: 18px ;
+ }
+ .metrics {
+     display: flex;
+
+     justify-content: space-between;
+     width: 100% ;
+
+     color: white ;
+     position: relative;
+     top: -200px ;
+     font-size: 10px ;
+     // @media only screen and (max-width: 1000px) {
+     //   flex-direction: column;
+     //   height: 700px ;
+     //   align-items: space-around;
+     //
+     //
+     // }
+       .s-item {
+
+
+           width : 20em ;
+           height: 15em ;
+           display: flex;
+           justify-content: space-around ;
+           align-items: center;
+           color: white ;
+           margin-bottom: 25px ;
+
+
+             &--orders {
+             background: rgb(2,0,36);
+             background: linear-gradient(29deg, rgba(2,0,36,1) 0%, rgba(67,134,226,1) 0%, rgba(26,83,111,1) 0%, rgba(41,84,140,0.969625350140056) 0%, rgba(33,93,103,1) 0%, rgba(107,105,113,1) 0%, rgba(57,46,210,0.8743872549019608) 100%, rgba(163,38,156,1) 100%, rgba(78,91,208,1) 100%);
+             }
+             &--money {
+               background: rgb(2,0,36);
+               background: linear-gradient(29deg, rgba(2,0,36,1) 0%, rgba(67,134,226,1) 0%, rgba(26,83,111,1) 0%, rgba(41,84,140,0.969625350140056) 0%, rgba(33,93,103,1) 0%, rgba(199,192,221,1) 0%, rgba(128,10,218,1) 100%, rgba(163,38,156,1) 100%, rgba(78,91,208,1) 100%);
+             }
+             &--clients {
+               background: rgb(2,0,36);
+               background: linear-gradient(29deg, rgba(2,0,36,1) 0%, rgba(67,134,226,1) 0%, rgba(26,83,111,1) 0%, rgba(41,84,140,0.969625350140056) 0%, rgba(33,93,103,1) 0%, rgba(193,221,192,1) 0%, rgba(20,200,16,1) 100%, rgba(163,38,156,1) 100%, rgba(78,91,208,1) 100%);
+             }
+             &--visitors {
+               background: rgb(2,0,36);
+               background: linear-gradient(50deg, rgba(2,0,36,1) 0%, rgba(67,134,226,1) 0%, rgba(26,83,111,1) 0%, rgba(41,84,140,0.969625350140056) 0%, rgba(33,93,103,1) 0%, rgba(135,159,48,1) 0%, rgba(244,245,27,1) 100%, rgba(163,38,156,1) 100%, rgba(78,91,208,1) 100%);
+             }
+           i {
+             font-size : 5em ;
+
+
+           }
+           .info {
+             width: 60% ;
+             display: flex;
+             flex-direction: column;
+
+             align-items: center;
+             justify-content: flex-start;
+             .nb {
+                font-size: 3em ;
+             }
+           }
+   }
+ }
+ .show-more-table {
+   width: 100% ;
+   display: flex ;
+   justify-content: center;
+   // background-color:  #F2F3F4 ;
+   border-top: 1px #707B7C solid ;
+   padding: 5px ;
+ }
+  .table-data {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top:-200px ;
+
+  .orders {
+    width: 50% ;
+
+  }
+  .popular-products {
+      width: 45% ;
+      td:first-child {
+        display: flex;
+
+        img {
+            height: 30px ;
+            width: 30px ;
+            margin-right: 5px ;
+        }
+
+      }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .metrics{
+     top:-170px ;
+     font-size: 3px ;
+     .s-item{
+       flex-direction: column;
+     }
+  }
+  .table-data{
+    flex-direction: column;
+
+    .orders {
+      width: 100% ;
+    }
+    .popular-products {
+      width: 100% ;
+    }
+}
+}
+  // @media only screen and (max-width: 1000px) {
+  //   margin-top: 670px ;
+  //   flex-direction: column;
+  //   .orders {
+  //     width: 100% ;
+  //   }
+  //   .popular-products {
+  //     width: 100% ;
+  //   }
+  //
+  //
+  // }
+}

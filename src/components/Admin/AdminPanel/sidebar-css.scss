@@ -1,0 +1,88 @@
+$color-any : #201B3D ;
+
+.admin-sidebar {
+
+  width : 15% ;
+  height: 100%;
+  z-index: 1 ;
+  display: block;
+  position: fixed;
+  background-color: $color-any ;
+
+
+  .admin-logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1C2441 ;
+    height: 60px ;
+
+
+    h3 {
+      color: white ;
+      font-size: 22px ;
+      font-family: tahoma ;
+      font-weight: 2px ;
+      text-transform: uppercase ;
+
+    }
+    i {
+      font-size: 18px ;
+      color:white ;
+      cursor: pointer;
+    }
+  }
+  @media only screen and (max-width: 980px) {
+    .admin-logo {
+      display: none ;
+    }
+  }
+  .admin-sidebar-nav{
+      ul{
+            padding: 0px ;
+            margin: 0px ;
+            list-style-type: none ;
+            display: flex;
+            flex-direction: column;
+            align-items:  center;
+            width: 100%      ;
+
+        }
+        li{
+          text-decoration: none;
+          padding: 15px ;
+          transition: .2s ;
+          width: 100% ;
+
+          &:hover{
+            background-color: #1C2441 ;
+
+          }
+          .item {
+            width: 100%  ;
+            display: flex;
+            align-items: center;
+            color : white ;
+            font-size: 18px ;
+            font-weight: 2em ;
+            @media only screen and (max-width: 980px) {
+              span {
+                display: none ;
+              }
+            }
+          }
+          i {
+
+            margin-right: 5px ;
+          }
+
+        }
+
+      }
+}
+@media only screen and (max-width: 980px) {
+  .admin-sidebar{
+    width : 60px ;
+  }
+
+}

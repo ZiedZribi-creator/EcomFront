@@ -1,0 +1,39 @@
+$light-grey : #707B7C ;
+$light : #F2F3F4 ;
+$btn-color : #34495E ;
+$dash-color : #323F6F ;
+.basic-admin-table {
+   thead{
+      background-color: $light ;
+      color : $light-grey ;
+   }
+   tbody .order-btn,.wishlist-btn {
+     border-radius: 50% ;
+     border: none ;
+     padding: 5px 10px  ;
+     color : white ;
+     background-color: $btn-color ;
+   }
+}
+.basic-admin-dash {
+    height: 150px ;
+    width: 100% ;
+    background-color: $dash-color;
+    display: flex;
+    align-items: flex-end;
+    font-size: 25px ;
+    color : white ;
+    i {
+      font-size: inherit ;
+      color: inherit ;
+    }
+    h2 {
+      font-size: inherit ;
+      color: inherit ;
+      text-transform: uppercase;
+    }
+}
+.basic-admin-container {
+  padding-left: 30px ;
+  padding-right: 30px ;
+}
